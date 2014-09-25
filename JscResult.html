@@ -6,10 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="keywords" content="">
 <link href="lib/style.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 </head>
+<script src="js/bootstrap.min.js"</script>
 <script src="lib/examboard.js"></script>
 <script src="lib/validator.js"></script>
-<body><table class="form-control" align="center" border="0" cellpadding="0" cellspacing="0" width="650">
+<body><table class="table" align="center" border="0" cellpadding="0" cellspacing="0" width="650">
 	<tbody>
 		<tr>
 			<td>
@@ -52,10 +54,11 @@
                           <td width="12%" align="left" valign="middle">&nbsp;</td>
                           <td width="24%" align="left" valign="middle">Examination</td>
                           <td width="7%" align="left" valign="middle">:</td>
-                          <td width="46%" align="right" valign="middle"><select name="exam" class="form-control" id="exam" onchange="fd(this);">
+                          <td width="46%" align="right" valign="middle">
+                              <select name="exam" class="form-control" id="exam" onchange="fd(this);">
                             <option value="">Select One</option>
-                           <option value="hsc">HSC/Alim</option>
-<option value="hsc_voc">HSC(Vocational)</option>
+                           <option value="jsc">JSC/JDC</option>
+
 							
                           </select></td>
                           <td width="11%" align="left" valign="middle">&nbsp;</td>
@@ -65,8 +68,10 @@
                           <td align="left" valign="middle">Year</td>
                           <td align="left" valign="middle">:</td>
                           <td align="right" valign="middle">
-                          <select name="year" class="form-control" id="year">
-                            <option value="NONE" selected>Select One</option><option value="2014">2014</option>
+                              <select name="year" class="form-control" id="year">
+                            <option value="NONE" selected>Select One</option>
+                                  <option value="2014">2014</option>
+                                  <option value="2013">2013</option>
                           </select></td>
                           <td align="left" valign="middle">&nbsp;</td>
                         </tr>
@@ -75,7 +80,7 @@
                           <td align="left" valign="middle">Board</td>
                           <td align="left" valign="middle">:</td>
                           <td align="right" valign="middle">
-                          <select name="board" class="form-control" id="board">
+                        <select name="board" class="form-control" id="board">
                           <option value=""selected>Select One</option>
 						  <option value="barisal">Barisal</option>
 						  <option value="chittagong">Chittagong</option>
@@ -96,7 +101,7 @@
                           <td align="left" valign="middle">Roll</td>
                           <td align="left" valign="middle">:</td>
                           <td align="right" valign="middle">
-						  <input name="roll" type="text" class="form-control" id="roll" maxlength="6" placeholder="Type Roll" onkeypress="return onlyNumbers()">
+						  <input name="roll" type="text" class="form-control" id="roll" maxlength="6" onkeypress="return onlyNumbers()">
 						  </td>
                           <td align="left" valign="middle">&nbsp;</td>
                         </tr>
@@ -104,9 +109,9 @@
                           <td align="left" valign="middle">&nbsp;</td>
                           <td align="left" valign="middle">&nbsp;</td>
                           <td align="left" valign="middle">&nbsp;</td>
-                          <td align="right" valign="middle">
-                          <input type="reset" class="btn btn-danger" value="Reset">
-                          <input type="submit" class="btn btn-primary" name="button2" id="button2" value="Submit"></td>
+                          <td align="right" valign="middle"> <br>
+                        
+                        <input type="submit" class="btn btn-primary btn-lg" value="Submit"></td>
                           <td align="left" valign="middle">&nbsp;</td>
                         </tr>
                         <tr>
@@ -139,16 +144,7 @@
 									</tbody>
 								</table>
 							</td>
-							<td align="right" background="images/back_right.gif" valign="top" width="12">
-								&nbsp;</td>
-						</tr>
-						<tr>
-							<td align="left" background="images/back_cor_left_bot.gif" valign="top">
-								&nbsp;</td>
-							<td background="images/back_bot.gif" valign="top">
-								&nbsp;</td>
-							<td align="right" background="images/back_cor_right_bot.gif" valign="top">
-								&nbsp;</td>
+							
 						</tr>
 					</tbody>
 				</table>
