@@ -39,7 +39,7 @@ ol, ul {
   list-style: none;
 }
 
-table {
+.table1 {
   border-collapse: collapse;
   background: yellow;
   border-spacing: 0;
